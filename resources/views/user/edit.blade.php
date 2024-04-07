@@ -6,7 +6,7 @@
         @csrf
         <div class="form-group" >
             <label for="name">User Name </label>
-        <input type="text" name="name" value="{{$data->name}}" class="form-control @error('name') border border-danger @enderror " id="name" placeholder="Enter User ka New name ghalo">
+        <input type="text" name="name" value="{{$data->name}}" class="form-control @error('name') border border-danger @enderror " id="name" placeholder="Enter User ka New name o">
         </div>
         <div class="form-group">
         <label for="email">User Email</label>
@@ -19,7 +19,7 @@
 
         {{-- <div class="form-group">
             <label for="exampleInputpro_category">User</label>
-            <input type="text" name="cat" value="{{$data->user}}"class="form-control @error('cat') border border-danger @enderror " id="exampleInputpro_category" placeholder="User roo User Ghal ">
+            <input type="text" name="cat" value="{{$data->user}}"class="form-control @error('cat') border border-danger @enderror " id="exampleInputpro_category" placeholder="User  User  ">
             </div>
 
         <div class="form-group">

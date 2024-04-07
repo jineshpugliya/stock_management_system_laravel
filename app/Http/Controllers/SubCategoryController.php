@@ -53,7 +53,7 @@ class SubCategoryController extends Controller
             'category_id'=>request('category_id'),
 
         ]);
-        return redirect('/subcategory')->with('success','Tumhara data submited successfully');
+        return redirect('/subcategory')->with('success','Your data submited successfully');
 
     }
 
@@ -123,8 +123,8 @@ class SubCategoryController extends Controller
         //    }
             $data->save();
         if($data->wasChanged())
-            return  redirect('/subcategory')->with('success','Tumhara data Edited successfully');
-        return redirect('/subcategory')->with('success','Tumhara data Edited successfully');
+            return  redirect('/subcategory')->with('success','Your data Edited successfully');
+        return redirect('/subcategory')->with('success','Your data Edited successfully');
 
     }
 
@@ -139,7 +139,7 @@ class SubCategoryController extends Controller
         $catdata=SubCategory::find(Crypt::decrypt($id));
         // Storage::delete('public/media/'.$catdata->media);
         $catdata->delete();
-        return redirect('subcategory/')->with('success','Tumhara data Uda diyo successfully');
+        return redirect('subcategory/')->with('success','Your data Uda diyo successfully');
 
     }
 }

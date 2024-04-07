@@ -6,7 +6,7 @@
         @csrf
         <div class="form-group" >
             <label for="name">Category Name </label>
-        <input type="text" name="name" value="{{$data->name}}" class="form-control @error('name') border border-danger @enderror " id="name" placeholder="Enter Category ka New name ghalo">
+        <input type="text" name="name" value="{{$data->name}}" class="form-control @error('name') border border-danger @enderror " id="name" placeholder="Enter Category ka New name o">
         </div>
         <div class="form-group">
         <label for="des">Category Desc</label>
@@ -14,7 +14,7 @@
         </div>
         {{-- <div class="form-group">
             <label for="exampleInputpro_category">Category</label>
-            <input type="text" name="cat" value="{{$data->category}}"class="form-control @error('cat') border border-danger @enderror " id="exampleInputpro_category" placeholder="Category roo Category Ghal ">
+            <input type="text" name="cat" value="{{$data->category}}"class="form-control @error('cat') border border-danger @enderror " id="exampleInputpro_category" placeholder="Category  Category  ">
             </div>
 
         <div class="form-group">

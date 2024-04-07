@@ -7,7 +7,7 @@
         @csrf
         <div class="form-group" >
             <label for="name">Category Name </label>
-        <input type="text" name="name" value="{{$data->name}}" class="form-control @error('name') border border-danger @enderror " id="name" placeholder="Enter Category ka New name ghalo">
+        <input type="text" name="name" value="{{$data->name}}" class="form-control @error('name') border border-danger @enderror " id="name" placeholder="Enter Category ka New name o">
         </div>
         <div class="form-group">
         <label for="description">Category Desc</label>
@@ -16,7 +16,7 @@
     </div>
     <div class="form-group">
         <label for="category">{{__('Category')}}</label>
-        <select type="text" name="category_id" class="form-control @error('category_id') border border-danger @enderror " id="category" placeholder="Category roo Description Ghal ">
+        <select type="text" name="category_id" class="form-control @error('category_id') border border-danger @enderror " id="category" placeholder="Category  Description  ">
         <option value="{{$data->category_id}}">{{$data->category->name??''}}</option>
             @foreach($catdata as $cd)
             <option value="{{$cd->id}}">{{ucfirst($cd->name)}}</option>
@@ -29,7 +29,7 @@
 </form>
         {{-- <div class="form-group">
             <label for="exampleInputpro_category">Category</label>
-            <input type="text" name="cat" value="{{$catdata->category}}"class="form-control @error('cat') border border-danger @enderror " id="exampleInputpro_category" placeholder="Category roo Category Ghal ">
+            <input type="text" name="cat" value="{{$catdata->category}}"class="form-control @error('cat') border border-danger @enderror " id="exampleInputpro_category" placeholder="Category  Category  ">
             </div>
 
         <div class="form-group">

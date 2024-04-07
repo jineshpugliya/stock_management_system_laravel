@@ -45,8 +45,11 @@
             {{-- <td>{{$dt->category}}</td> --}}
 
             {{-- <td><img src={{Storage::url('public/media/'.$dt->media)}} alt="" height="100px" width="100px"></td> --}}
-            <td><h5 class="btn btn-primary">
-                <a href="/category/{{Crypt::encrypt($dt->id)}}/edit">Edit</a>  </td>
+            <td>
+              <!-- <h5 class="btn btn-primary"> -->
+            <button class="btn btn-primary" onclick="window.location.href='/category/{{ Crypt::encrypt($dt->id) }}/edit'">Edit</button>
+ 
+               </td>
                 <td>  <form method="post" action="/category/{{Crypt::encrypt($dt->id)}}">
                     @method('delete')
                     @csrf

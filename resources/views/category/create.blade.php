@@ -23,7 +23,7 @@
         @csrf
         <div class="form-group" >
             <label for="exampleInputpro_name"> Enter Category Name</label>
-        <input type="text" name="name" class="form-control @error('name') border border-danger @enderror " id="exampleInputpro_name" placeholder="Category ro Naam Ghal">
+        <input type="text" name="name" class="form-control @error('name') border border-danger @enderror " id="exampleInputpro_name" placeholder="Category  Name ">
     {{-- @error('name')
     <div class ="border-danger">
         {{$message}}
@@ -32,11 +32,11 @@
     </div>
         <div class="form-group">
         <label for="des">Enter Category Description</label>
-        <input type="text" name="des" class="form-control @error('des') border border-danger @enderror " id="des" placeholder="Category roo Description Ghal ">
+        <input type="text" name="des" class="form-control @error('des') border border-danger @enderror " id="des" placeholder="Category  Description  ">
         </div>
         {{-- <div class="form-group">
             <label for="exampleInputpro_category">Category</label>
-            <input type="text" name="cat" class="form-control @error('cat') border border-danger @enderror " id="exampleInputpro_category" placeholder="Category roo Category Ghal ">
+            <input type="text" name="cat" class="form-control @error('cat') border border-danger @enderror " id="exampleInputpro_category" placeholder="Category  Category  ">
             </div> --}}
 
         {{-- <div class="form-group">

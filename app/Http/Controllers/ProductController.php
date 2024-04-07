@@ -60,7 +60,7 @@ class ProductController extends Controller
             'name'=>request('name'),
             'description'=>request('description'),
         ]);
-        return redirect('/product')->with('success','Tumhara data submited successfully');
+        return redirect('/product')->with('success','Your data submited successfully');
 
     }
 
@@ -125,8 +125,8 @@ class ProductController extends Controller
     //    }
         $data->save();
     if($data->wasChanged())
-        return  redirect('/product')->with('success','Tumhara data Edited successfully');
-    return redirect('/product')->with('success','Tumhara data Edited successfully');
+        return  redirect('/product')->with('success','Your data Edited successfully');
+    return redirect('/product')->with('success','Your data Edited successfully');
 
     }
 
@@ -141,7 +141,7 @@ class ProductController extends Controller
         $catdata=Product::find(Crypt::decrypt($id));
         // Storage::delete('public/media/'.$catdata->media);
         $catdata->delete();
-        return redirect('product/')->with('success','Tumhara data Uda diyo successfully');
+        return redirect('product/')->with('success','Your data Uda diyo successfully');
 
     }
 }

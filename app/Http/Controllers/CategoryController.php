@@ -59,7 +59,7 @@ class CategoryController extends Controller
         $data->save();
         //middleware(AgeMiddleware::class);
 
-        return redirect('/category')->with('success','Tumhara data submited successfully');
+        return redirect('/category')->with('success','Your data submited successfully');
     }
 
     /**
@@ -116,7 +116,7 @@ class CategoryController extends Controller
         //    }
             $data->save();
 
-            return redirect('category/')->with('success','Tumhara data Edited successfully');
+            return redirect('category/')->with('success','Your data Edited successfully');
 
     }
 
@@ -131,6 +131,6 @@ class CategoryController extends Controller
         $data=Category::find(Crypt::decrypt($id));
     // Storage::delete('public/media/'.$data->media);
     $data->delete();
-    return redirect('category/')->with('success','Tumhara data Uda diyo successfully');
+    return redirect('category/')->with('success','Your data Uda diyo successfully');
     }
 }

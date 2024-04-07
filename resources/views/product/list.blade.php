@@ -40,8 +40,9 @@
             {{-- <td>{{$cd->product}}</td> --}}
 
             {{-- <td><img src={{Storage::url('public/media/'.$cd->media)}} alt="" height="100px" width="100px"></td> --}}
-            <td><h5 class="btn btn-primary">
-                <a href="/product/{{Crypt::encrypt($cd->id)}}/edit">Edit</a>  </td>
+            <td>
+              <!-- <h5 class="btn btn-primary"> -->
+                <button class="btn btn-primary"  onclick="window.location.href='/product/{{Crypt::encrypt($cd->id)}}/edit'">Edit</button>  </td>
                 <td>  <form method="post" action="/product/{{Crypt::encrypt($cd->id)}}">
                     @method('delete')
                     @csrf

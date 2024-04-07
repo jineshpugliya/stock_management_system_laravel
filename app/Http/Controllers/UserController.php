@@ -74,7 +74,7 @@ class UserController extends Controller
 
         //middleware(AgeMiddleware::class);
 
-        return redirect('/user')->with('success','Tumhara data submited successfully');
+        return redirect('/user')->with('success','Your data submited successfully');
 
     }
 
@@ -136,7 +136,7 @@ class UserController extends Controller
         //    }
             $data->save();
 
-            return redirect('user/')->with('success','Tumhara data Edited successfully');
+            return redirect('user/')->with('success','Your data Edited successfully');
 
     }
 
@@ -151,7 +151,7 @@ class UserController extends Controller
         $data=User::find(Crypt::decrypt($id));
         // Storage::delete('public/media/'.$data->media);
         $data->delete();
-        return redirect('user/')->with('success','Tumhara data Uda diyo successfully');
+        return redirect('user/')->with('success','Your data Uda diyo successfully');
 
     }
 }

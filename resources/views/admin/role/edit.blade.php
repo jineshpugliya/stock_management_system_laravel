@@ -6,11 +6,11 @@
         @csrf
         <div class="form-group" >
             <label for="name">Role Name </label>
-        <input type="text" name="name" value="{{$data->name}}" class="form-control @error('name') border border-danger @enderror " id="name" placeholder="Enter Role ka New name ghalo">
+        <input type="text" name="name" value="{{$data->name}}" class="form-control @error('name') border border-danger @enderror " id="name" placeholder="Enter Role ka New name o">
         </div>
         <div class="form-group" >
             <label for="display_name">Role Name </label>
-        <input type="text" name="display_name" value="{{$data->display_name}}" class="form-control @error('display_name') border border-danger @enderror " id="display_name" placeholder="Enter Role ka New name ghalo">
+        <input type="text" name="display_name" value="{{$data->display_name}}" class="form-control @error('display_name') border border-danger @enderror " id="display_name" placeholder="Enter Role ka New name o">
         </div>
         <div class="form-group">
         <label for="description">Role Desc</label>

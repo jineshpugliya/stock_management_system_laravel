@@ -44,7 +44,7 @@ class RoleController extends Controller
 
         $data->description=request('description');
         $data->save();
-        return redirect('/role')->with('success','Tumhara data submited successfully');
+        return redirect('/role')->with('success','Your data submited successfully');
 
     }
 
@@ -90,7 +90,7 @@ class RoleController extends Controller
 
         $data->save();
 
-        return redirect('role/')->with('success','Tumhara data Edited successfully');
+        return redirect('role/')->with('success','Your data Edited successfully');
 
     }
 
@@ -104,7 +104,7 @@ class RoleController extends Controller
     {
         $data=Role::find(Crypt::decrypt($id));
         $data->delete();
-        return redirect('role/')->with('success','Tumhara data Uda diyo successfully');
+        return redirect('role/')->with('success','Your data Uda diyo successfully');
 
     }
 }

@@ -18,7 +18,7 @@
         @csrf
         <div class="form-group" >
             <label for="name">{{__('Name')}}</label>
-        <input type="text" name=" name" class="form-control @error('name') border border-danger @enderror " id="name" placeholder="Category ro Naam Ghal">
+        <input type="text" name=" name" class="form-control @error('name') border border-danger @enderror " id="name" placeholder="Category  Name ">
 
          @error('name')
          <small class="form-text text-danger">Please enter Name</small>
@@ -27,7 +27,7 @@
     </div>
     <div class="form-group" >
         <label for="description">{{__('Description')}}</label>
-    <input type="text" name="description" class="form-control @error('description') border border-danger @enderror " id="description" placeholder="Category ro Naam Ghal">
+    <input type="text" name="description" class="form-control @error('description') border border-danger @enderror " id="description" placeholder="Category  Name ">
 
      @error('description')
      <small class="form-text text-danger">Please enter Desciption</small>
@@ -65,7 +65,7 @@
 
         {{-- <div class="form-group">
             <label for="exampleInputpro_category">Category</label>
-            <input type="text" name="cat" class="form-control @error('cat') border border-danger @enderror " id="exampleInputpro_category" placeholder="Category roo Category Ghal ">
+            <input type="text" name="cat" class="form-control @error('cat') border border-danger @enderror " id="exampleInputpro_category" placeholder="Category  Category  ">
             </div> --}}
 
         {{-- <div class="form-group">

@@ -23,7 +23,7 @@
         @csrf
         <div class="form-group" >
             <label for="exampleInputpro_name"> Enter User Name</label>
-        <input type="text" name="name" class="form-control @error('name') border border-danger @enderror " id="exampleInputpro_name" placeholder="User ro Naam Ghal">
+        <input type="text" name="name" class="form-control @error('name') border border-danger @enderror " id="exampleInputpro_name" placeholder="User  Name ">
     {{-- @error('name')
     <div class ="border-danger">
         {{$message}}
