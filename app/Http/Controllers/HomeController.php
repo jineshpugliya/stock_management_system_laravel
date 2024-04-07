@@ -33,7 +33,7 @@ class HomeController extends Controller
     public function sendMail(){
         $user=User::find(2);
        // Notification::send($user,new Test());
-       Notification::send($user,new Test(['url'=>'https://google.com','line_one'=>'welcome to our www.axixatechnologies.com','line_two'=>'work on progress']));
+       Notification::send($user,new Test(['url'=>'https://google.com','line_one'=>'welcome to our https://jineshpugliya.github.io/my-portfolio/','line_two'=>'work on progress']));
        //     dd("Notification sent");
 
     }

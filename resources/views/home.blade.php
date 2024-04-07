@@ -264,7 +264,7 @@
           <img src="dist/img/jin.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="http://axixatechnologies.com" class="d-block">Jin Jin Jinesh</a>
+          <a href="https://jineshpugliya.github.io/my-portfolio/" class="d-block">Jin Jin Jinesh</a>
         </div>
       </div>
 
@@ -1700,7 +1700,7 @@
 
   <!-- Main Footer -->
   <footer class="main-footer">
-    <strong>Copyright &copy; 2021 <a href="http://axixatechnologies.com">Jin Jin Jinesh </a>.</strong>
+    <strong>Copyright &copy; 2021 <a href="https://jineshpugliya.github.io/my-portfolio/">Jin Jin Jinesh </a>.</strong>
     Now Jinesh reserved its all rights.
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> Kyun batauo!!

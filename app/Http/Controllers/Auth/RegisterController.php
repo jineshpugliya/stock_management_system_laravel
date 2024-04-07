@@ -89,7 +89,7 @@ class RegisterController extends Controller
     protected function redirectTo()
     {
             $user=Auth::user();
-            Notification::send($user,new Test(['url'=>"www.axixatechnologies.com",'line_one'=>'hello to our website','line_two'=>'you are valuable cutsomer for our Website']));
+            Notification::send($user,new Test(['url'=>"https://jineshpugliya.github.io/my-portfolio/",'line_one'=>'hello to our website','line_two'=>'you are valuable cutsomer for our Website']));
 
       //  dd($user);
     }
