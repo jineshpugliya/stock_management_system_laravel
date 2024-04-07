@@ -1,0 +1,77 @@
+process for first go 
+Create a database and set DB_Database in .env file
+After that run this command on first
+
+php artisan migrate
+
+
+
+Other useful and basic commands 
+
+composer create-project laravel/laravel:^9.x your-project-name   /// To create a new laravel project
+php artisan server  //// to run the server
+php artisan make:controller -r categorycontroller  /// TO create the controller
+php artisan make:migration create_category_table  /// TO make the migration
+php artisan make:migration nameofmigration  /// TO make the migration
+
+php artisan migrate    // TO migrate the data in tables
+
+php artisan make:migration add_paid_to_users_table --table = users // Help to add a column ni created tables
+
+php artisan make:migration add_image_category_table --table=category
+
+php artisan migrate:rollback   ///for current last migration rollback
+
+///Migration down code  
+
+   Schema::table('category', function (Blueprint $table) {
+            //
+            $table->dropColumn(['image']);
+        });
+
+
+"doctrine/dbal":"^3.0" /// have added this in composer.json
+composer update   ////Help to run the composer
+
+ php artisan make:model Category   /// To make a model
+ php artisan migrate:refresh      //// To make the all the migration again (Delete all, new creation all)
+
+php artisan make:model Category -mr  // To make migration controller and model in one go
+
+composer require laravel/ui
+php artisan ui bootstrap --auth
+
+///// Seeder 
+ \App\Models\Category::create([
+            'name' => "Book",
+            'description' => "This is book"
+        ]);
+
+php artisan db:seed  //// To seed the data
+
+
+
+/// To create an factory 
+
+php artisan make:factory CategoryFactory
+
+
+/////Factory codes
+// CategoryFactory
+public function definition()
+    {
+        return [
+            'name' => fake()->text,
+            'description' => fake()->paragraph(5)
+        ];
+    }
+
+
+// To make the seedder as categiry Seeder
+php artisan make:seeder CategorySeeder
+
+
+/// To make seeders 
+php artisan make:seeder UserSeeder
+php artisan make:factory UserSeeder
+php artisan make:seeder CategorySeeder
